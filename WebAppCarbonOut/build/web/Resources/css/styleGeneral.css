@@ -1,0 +1,471 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/10/2020, 06:40:55 PM
+    Author     : 51968
+*/
+
+/* Vector 3 */
+
+* {
+    overflow-x: hidden;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.panelInicial {
+    width: 100%;
+    height: 568px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 104px;
+    left: 211px;
+    overflow: hidden;
+}
+
+
+.titleInicial {
+    width: 523px;
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+    color: #1B9E3A;
+}
+
+.textPrincipal {
+    width: 502px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 214px;
+    left: 0px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+}
+
+.circleGreen{
+    width: 259px;
+    height: 259px;
+    background: rgba(27,158,58,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 695px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circleSkyBlue {
+    width: 543px;
+    height: 551px;
+    background: rgba(47,191,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 112px;
+    left: 1200px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circleWithImage{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 443px;
+   height: 443px;
+   left: 800px;
+   top: 85px;
+   background-image:  url(../img/imgPatito.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.panelSecond{    
+    width: 1237px;
+    height: 537px;
+    left: -85px;
+    top: 517px;
+}
+
+.titleSecond {
+    width: 523px;
+    position: absolute;
+    top: 830px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+    left: 211px;
+    color: #01B4BB;
+}
+
+.textSecond {
+    width: 502px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 890px;
+    font-family: Roboto;
+    font-weight: Regular;
+    
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    left: 211px;
+}
+
+.circleOnlyBorder{
+    /* Ellipse 5 */
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -125px;
+    top: 717px;
+    /* celeste */
+    border: 16px solid #2FBFE0;
+    border-radius: 50%;
+}
+
+.circleWithImageHogar{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 700px;
+   left: 750px;
+   background-image:  url(../img/imgHogar.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleWithImageAlimentacion{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 700px;
+   left: 1200px;
+   background-image:  url(../img/imgAlimentacion.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleWithImageEstiloVida{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 1050px;
+   left: 750px;
+   background-image:  url(../img/imgEstiloVida.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleWithImageTransporte{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 1050px;
+   left: 1200px;
+   background-image:  url(../img/imgTransporte.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+
+.panelThird{    
+    width: 1237px;
+    height: 537px;
+    left: -85px;
+    top: 1400px;
+}
+
+.circleOnlyBorderGreen{
+    /* Ellipse 5 */
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1385px;
+    top: 1400px;
+    /* celeste */
+    border: 16px solid #1B9E3A;
+    border-radius: 50%;
+}
+
+.circleWithImagePlaya{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   top: 1400px;
+   left: 250px;
+   background-image:  url(../img/imgPlaya.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleGreenSecond{
+    width: 259px;
+    height: 259px;
+    background: rgba(27,158,58,1);
+    opacity: 1;
+    position: absolute;
+    top: 1400px;
+    left: 580px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.titleThird{
+    width: 523px;
+    position: absolute;
+    top: 1430px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+    left: 950px;
+    color: #01B4BB;
+}
+
+.textThird {
+    width: 502px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 1530px;
+    font-family: Roboto;
+    font-weight: Regular;
+    
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    left: 911px;
+}
+
+.circleSkyBlueSecond {
+    width: 283px;
+    height: 281px;
+    background: rgba(47,191,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 1700px;
+    left: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+
+.titleFour{
+    width: 523px;
+    position: absolute;
+    top: 2030px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+    left: 650px;
+    color: #01B4BB;
+}
+
+.circleWithImageFour1{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 2150px;
+   left: 350px;
+   background-image:  url(../img/imgPlaya.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleWithImageFour2{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height:250px;
+   top: 2150px;
+   left: 650px;
+   background-image:  url(../img/imgPlaya.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+.circleWithImageFour3{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: 2150px;
+   left: 950px;
+   background-image:  url(../img/imgPlaya.png);
+   background-size: contain;
+   background-size: cover;
+   border-radius: 50%;
+   z-index: 2;
+   /* Sombra1 */
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);  
+}
+
+
+.footerImage{
+   /* Ellipse 3 */
+   position: absolute;
+   width: 147px;
+   height:53px;
+   top: 2550px;
+   left: 715px;
+   background-image:  url(../img/footer1.png);
+   z-index: 2;
+   /* Sombra1 */
+}
+
+
+.textLast {
+    width: 502px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 2610px;
+    left: 640px;
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+}
+
+/*BTN Agregar*/
+.btnEntrar {
+    width: 220px;
+    height: 25px;
+    left: 211px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 260px;
+    bottom: 0%;
+    text-decoration: none;
+    text-align: center;
+    /* verde */
+    background: #1B9E3A;
+    border-radius: 30px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btnEntrar:hover {
+	background-color: #0082e6;
+}
